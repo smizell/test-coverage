@@ -1,6 +1,6 @@
 # Test Coverage
 
-This repository shows the limitations with test coverage as valuable a metric. The code shows there is 100% test coverage for all files, yet there is a huge bug not caught by test coverage.
+This repository shows the limitations with test coverage as valuable a metric for improving quality. The code shows there is 100% test coverage for all files, yet there is a huge bug not caught by test coverage.
 
 ## The Issue
 
