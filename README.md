@@ -10,7 +10,7 @@ However, there is a bug. If the inputs are `true` and `false` or `false` and `tr
 
 ## The Reason
 
-The [test.js](./test.js) has only two tests that result in 100% coverage which means it covers every possible branch. However, two tests are not enough to cover all possible outcomes of two conditionals. To do so, you need 2^n tests, so far this case, it's 2^2 which is 4. If we had tested all possible conditions, we would have found the bug.
+The [test.js](./test.js) has only two tests that result in 100% coverage which means it covers every possible branch. However, two tests are not enough to cover all possible outcomes of two conditionals. To do so, you need 2^n tests. For this example, it's 2^2 which is four. If we had tested all possible conditions with four tests, we would have found the bug.
 
 ## A Note on Testing
 
