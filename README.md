@@ -1,16 +1,16 @@
 # Test Coverage Doesn't Improve Code Quality
 
-This repository shows the limitations with test coverage as valuable a metric for improving quality. The code shows there is 100% test coverage for all files, yet there is a huge bug not caught by test coverage.
+This repository shows the limitations with test coverage as valuable a metric for improving quality. The code in this repository shows there is 100% test coverage for all files, yet there is a huge bug not caught by test coverage.
 
 ## The Issue
 
-I created an `alwaysTwelve` function that takes two inputs. If both inputs are `true`, the value is `12`. If both values are false, the value is still `12`. You can see how this happens if you check out `index.js`. These two tests are enough to get 100% coverage.
+I created an `alwaysTwelve` function that takes two inputs. If both inputs are `true`, the value is `12`. If both values are `false`, the value is still `12`. You can see how this happens if you check out [index.js](.index.js). These two tests are enough to get 100% coverage.
 
 However, there is a bug. If the inputs are `true` and `false` or `false` and `true`, the value is not `12`, but rather `8` and `18` respectively. Though the coverage was 100%, it isn't enough to tell us there are untested paths through the function.
 
 ## The Reason
 
-The `test.js` has only two tests that result in 100% coverage which means it covers every possible branch. However, two tests are not enough to cover all possible outcomes of two conditionals. To do so, you need 2^n tests, so far this case, it's 2^2 which is 4. If we had tested all possible conditions, we would have found the bug.
+The [test.js](./test.js) has only two tests that result in 100% coverage which means it covers every possible branch. However, two tests are not enough to cover all possible outcomes of two conditionals. To do so, you need 2^n tests, so far this case, it's 2^2 which is 4. If we had tested all possible conditions, we would have found the bug.
 
 ## A Note on Testing
 
