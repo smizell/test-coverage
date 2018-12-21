@@ -6,6 +6,8 @@ exports.alwaysTwelve = function (a, b) {
   // is the glaring issue when a is true and b is false
   // and vice versa.
 
+  let y, z;
+
   if (a === true) {
     y = 4;
   } else {
