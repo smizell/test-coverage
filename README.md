@@ -4,7 +4,7 @@ This repository shows the limitations with test coverage as valuable a metric fo
 
 ## The Issue
 
-I created an `alwaysTwelve` function that takes two inputs. If both inputs are `true`, the value is `12`. If both values are `false`, the value is still `12`. You can see how this happens if you check out [index.js](.index.js). These two tests are enough to get 100% coverage.
+I created an `alwaysTwelve` function that takes two inputs. If both inputs are `true`, the value is `12`. If both values are `false`, the value is still `12`. You can see how this happens if you check out [index.js](./index.js). These two tests are enough to get 100% coverage.
 
 However, there is a bug. If the inputs are `true` and `false` or `false` and `true`, the value is not `12`, but rather `8` and `18` respectively. Though the coverage was 100%, it isn't enough to tell us there are untested paths through the function.
 
