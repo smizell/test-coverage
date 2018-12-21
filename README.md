@@ -1,4 +1,4 @@
-# Test Coverage
+# Test Coverage Doesn't Improve Code Quality
 
 This repository shows the limitations with test coverage as valuable a metric for improving quality. The code shows there is 100% test coverage for all files, yet there is a huge bug not caught by test coverage.
 
